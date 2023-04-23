@@ -1,0 +1,187 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>water conservation | Home</title>
+        <link rel="stylesheet" href="style.css">
+        <link rel="icon" href="images/water conservation logo1.png" type="image/x-icon">
+        <link href="https://cdn.jsdelivr.net/npm/remixicon@2.5.0/fonts/remixicon.css" rel="stylesheet">
+    </head>
+    <body>
+        <!-- Header -->
+        <header>
+            <!-- Header Logo -->
+            <div id="logo_div"><img src="images/water conservation logo1.png" alt="Water conservation logo1" id="logo"></div>
+
+            <!-- Links -->
+            <!-- Link 1 - Home -->
+            <div class="nav_items">
+                <span class="nav_linkbox">
+                    <a href="index.html" class="links">
+                        <p><i class="ri-home-2-fill"></i> &nbsp;Home</p>
+                    </a>
+                </span>
+            </div>
+
+            <!-- Link 2 - Effects -->
+            <div class="nav_items">
+                <span class="nav_linkbox">
+                    <a href="effects.html" class="links">
+                        <p><i class="ri-article-fill"></i> &nbsp;Effects</p>
+                    </a>
+                </span>
+            </div>
+
+            <!-- Link 3 - Solutions -->
+            <div class="nav_items">
+                <span class="nav_linkbox">
+                    <a href="solutions.html" class="links">
+                        <p><i class="ri-tools-fill"></i> &nbsp;Solutions</p>
+                    </a>
+                </span>
+            </div>
+
+            <!-- Link 4 - News -->
+            <div class="nav_items">
+                <span class="nav_linkbox">
+                    <a href="news.html" class="links">
+                        <p><i class="ri-newspaper-fill"></i> &nbsp;News</p>
+                    </a>
+                </span>
+            </div>
+
+            <!-- Link 5 - Contact -->
+            <div class="nav_items">
+                <span class="nav_linkbox">
+                    <a href="contact.html"class="links">
+                        <p><i class="ri-phone-fill"></i> &nbsp;Contact</p>
+                    </a>
+                </span>
+            </div>
+        </header>
+
+        <!-- Spacing -->
+        <div class="spacer">
+            &nbsp;
+        </div>
+
+        <main>
+            <!-- Main Cover Image -->
+            <div class="box">
+                <img src="images/cover page.jpg" alt="Main Cover Pic" id="cover_pic">
+            </div>
+
+            <br> 
+
+            <!-- Global Warming Introduction Paragrapgh -->
+            <section>
+                <div  class="global_para">
+                    <img src="images/logo2.png" alt="Global Warming" id="global_para_pic">
+                    <h1>Water conservation</h1>
+                    <p>Water conservation is the practice of using water wisely and efficiently in order to preserve this precious natural resource. It involves reducing water waste, promoting the sustainable use of water, and implementing measures to protect water quality. Water conservation is important because freshwater resources are finite, and in many parts of the world, water scarcity is becoming an increasingly pressing issue. By conserving water, we can ensure that there will be enough clean water available for future generations and for the various needs of society, including agriculture, industry, and human consumption.</p>
+                    
+                    <a href="https://www.coastalexpeditions.com/blog/water-conservation-101/">
+                        <span class="more_info_box">
+                            More...
+                        </span>
+                    </a>
+                </div>
+            </section>
+            
+            <br>
+            <br>
+            <br>
+
+            <hr>
+
+            <!-- It's Causes -->
+            <section>
+                <div class="causes">
+                    <h2 id="causes_head">Causes</h2>
+
+                    <!-- Type 1 Causes -->
+                    <div class="man_cause">
+                        <h3>Man-Made Causes</h3>
+                        <ul>
+                            <li>Overuse of water for irrigation and agriculture</li>
+                            <li>Leaking pipes and fixtures in homes and buildings</li>
+                            <li>Inefficient industrial processes that use large amounts of water</li>
+                            <li>Water pollution and contamination from human activities </li>
+                            <li>Excessive use of water for recreational purposes such as swimming pools and golf courses</li>
+                            <li>Excessive use of water for recreational purposes such as swimming pools and golf courses</li>
+                        </ul>
+                    </div>
+
+                    <!-- Type 2 Causes -->
+                    <div class="natural_cause">
+                        <h3>Natural Causes</h3>
+                        <ul>
+                            <li>Drought and arid climates with limited rainfall </li>
+                            <li>Evaporation from natural bodies of water such as lakes and rivers </li>
+                            <li>Changes in climate patterns and weather conditions </li>
+                            <li>Geographical factors such as rocky terrain or steep slopes that limit water retention </li>
+                        </ul>
+                    </div>
+
+                    <!-- Causes Section Pic -->
+                    <img src="images/logo3.jpg" alt="Causes_pic" id="cause_pic">
+                </div>
+            </section>
+
+            <hr>
+
+            <!-- Carbon Calculator -->
+            <section>
+                <div class="carb_cal">
+                    <img src="images/logo 4.png " alt="Carbon Calculator Icon" id="carb_cal_pic">
+                    <h2>Water consumption Calculator</h2>
+                    <p>A water consumption calculator is a tool used to estimate the amount of water used by an individual or household in order to promote water conservation and sustainable use..</p>
+                    <br>
+                    <button onclick="calculate()" class="more_info_box">Calculate</button>
+                    <h3 id = "Water consumption"></h3>
+                </div>
+            </section>
+        </main>
+
+        <br>
+        
+        <!-- Footer -->
+        <footer>
+            &copy;Water Conservation | <em>"Save Water today to survive tomorrow."</em>
+        </footer>
+    </body>
+
+    <!-- JavaScript -->
+    <script>
+        function calculate() {
+        var kitchenuasge = prompt("Enter the  kitchen water usage ");
+        var bathroomuasge = prompt("Enter the bathroom water usage ");
+        var lawnusage = prompt("Enter the lawn water usage ");
+        var miscusage = prompt("Enter the miscllineous water usage ");
+        var cleaningusage = prompt("Enter extra cleaning purpose usage ");
+        var washingvehicles = prompt("Enter the no of  vehicles u are washing");
+        var irrigation = prompt(" enter no. of fields u have ");
+        
+        var add1, add2;
+
+        if(paper=="y") {
+        add1 = 184;
+        } else {
+        add1 = 0;
+        }
+        
+        var lead = prompt("Enter y if you do rain water harvesting");
+        if (lead=="y") {
+        add2 = 166;
+        } else {
+        add2 = 0;
+        }
+        
+        var foot = ((kitchenuasge*105)+(bathroomuasge*105)+(lawnusage*113)+(miscusage*0.79)+(cleaningusage*1100)+(washingvehicles*4400)+add1+add2)/10000;
+        
+        document.getElementById("Water consumption").innerHTML="Your Water consumption is "+foot+" tons.";
+        }
+    </script>
+</html>
